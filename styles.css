@@ -1,0 +1,58 @@
+.Calculator{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Display{
+    display: flex;
+    color: white;
+    background-color: black;
+}
+
+.Num_Pad{
+    display: flex;
+    padding: 10px;
+    background-color: #212121;
+    flex-direction: column;
+    gap: 2.5px;
+}
+
+.notation,.btn,.equal,.clear_button{
+    color: white;
+    border: none;
+    width: 20px;
+}
+
+.notation{
+    background-color: orange;
+}
+
+.notation:active{
+    background-color: darkorange;
+}
+
+.btn{
+    background-color: gray;
+}
+
+.btn:active{
+    background-color: darkgray;
+}
+
+.equal{
+    background-color: green;
+}
+
+.equal:active{
+    background-color: darkgreen;
+}
+
+.clear_button{
+    background-color: red;
+}
+
+.clear_button:active{
+    background-color: darkred;
+}
