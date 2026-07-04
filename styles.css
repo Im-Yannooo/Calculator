@@ -5,28 +5,47 @@
     height: 100vh;
 }
 
-.Display{
+.Calculator_Body{
     display: flex;
-    color: white;
-    background-color: black;
+    flex-direction: column;
+    padding: 100px;
 }
 
 .Num_Pad{
     display: flex;
-    padding: 10px;
-    background-color: #212121;
     flex-direction: column;
-    gap: 2.5px;
+    border-radius: 15px;
+    padding: 25px;
+    gap: 20px;
+    background-color: #212121;
+}
+
+.Display{
+    display: flex;
+    padding: 80px;
+    height: 80px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
 }
 
 .notation,.btn,.equal,.clear_button{
     color: white;
     border: none;
-    width: 20px;
+    border-radius: 0.25rem;
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#Row_0, #Row_1, #Row_2, #Row_3, #Row_4 {
+  display: flex;
+  gap: 15px;
 }
 
 .notation{
-    background-color: orange;
+    background-color: #f8973c ;
 }
 
 .notation:active{
@@ -34,7 +53,7 @@
 }
 
 .btn{
-    background-color: gray;
+    background-color: #D3D3D3;
 }
 
 .btn:active{
