@@ -20,11 +20,12 @@
     background-color: #212121;
 }
 
-.Display{
+#Display{
     display: flex;
     padding: 80px;
     height: 80px;
     border-radius: 15px;
+    border: 0;
     color: white;
     background-color: black;
 }

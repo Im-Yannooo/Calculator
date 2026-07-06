@@ -1,8 +1,9 @@
-console.log(`faggot`);
+const display = document.getElementById("Display");
 
-window.alert(`Easy there boyyo`);
-window.alert(`You are doing good`);
+function AppendToDisplay(input){
+    display.value += input;
+}
 
-let x = 10;
-
-console.log(`The value of x is ${x}`);
+function CalculateToDisplay(){
+    
+}
