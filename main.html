@@ -12,10 +12,10 @@
             <div class="Num_Pad">
                 <input id="Display" readonly>
                 <div id="Row_0">
-                    <button class="notation" value="*">*</button>
-                    <button class="notation" value="/">/</button>
-                    <button class="notation" value="-">-</button>
-                    <button class="notation" value="+">+</button>
+                    <button class="notation" onclick="AppendToDisplay(`*`)">*</button>
+                    <button class="notation" onclick="AppendToDisplay(`/`)">/</button>
+                    <button class="notation" onclick="AppendToDisplay(`-`)">-</button>
+                    <button class="notation" onclick="AppendToDisplay(`+`)">+</button>
                 </div>
                 <div id="Row_1">
                     <button class="btn" onclick="AppendToDisplay(`9`)">9</button>
@@ -24,19 +24,19 @@
                     <button class="btn" onclick="AppendToDisplay(`6`)">6</button>
                 </div>
                 <div id="Row_2">
-                    <button class="btn" value="5">5</button>
-                    <button class="btn" value="4">4</button>
-                    <button class="btn" value="3">3</button>
-                    <button class="btn" value="2">2</button>
+                    <button class="btn" onclick="AppendToDisplay(`5`)">5</button>
+                    <button class="btn" onclick="AppendToDisplay(`4`)">4</button>
+                    <button class="btn" onclick="AppendToDisplay(`3`)">3</button>
+                    <button class="btn" onclick="AppendToDisplay(`2`)">2</button>
                 </div>
                 <div id="Row_3">
-                    <button class="btn" value="1">1</button>
-                    <button class="btn" value="0">0</button>
-                    <button class="btn" value=".">.</button>
-                    <button class="equal" value="=">=</button>
+                    <button class="btn" onclick="AppendToDisplay(`1`)">1</button>
+                    <button class="btn" onclick="AppendToDisplay(`0`)">0</button>
+                    <button class="btn" onclick="AppendToDisplay(`.`)">.</button>
+                    <button class="equal" onclick="CalculateDisplay(`=`)">=</button>
                 </div>
                 <div id="Row_4">
-                    <button class="clear_button">c</button>
+                    <button class="clear_button" onclick="ClearDisplay()">c</button>
                 </div>
             </div>
         </div>
